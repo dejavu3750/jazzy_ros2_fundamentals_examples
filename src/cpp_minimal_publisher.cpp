@@ -34,7 +34,7 @@ private:
   rclcpp::TimerBase::SharedPtr timer_;
 };
 
-
+#ifndef TESTING_EXCLUDE_MAIN
 int main(int argc, char *argv[])
 {
   rclcpp::init(argc, argv);
@@ -47,3 +47,4 @@ int main(int argc, char *argv[])
 
   return 0;
 }
+#endif 
